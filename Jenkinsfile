@@ -12,7 +12,7 @@ pipeline {
                 git 'https://github.com/Shaileshk-cloud/MyWebApp.git'
             }
         }
-https://github.com/ShashiMadari/MavenWebApp.git
+
         stage('Build WAR') {
             steps {
                 sh 'mvn clean package'
@@ -23,7 +23,7 @@ https://github.com/ShashiMadari/MavenWebApp.git
             steps {
                 sh '''
                     # Local copy to Tomcat webapps directory
-                    sudo cp target/MymavenWebApp01.war /opt/tomcat/webapps/
+                    sudo cp target/mymaventom.war/opt/tomcat/webapps/
                 '''
             }
         }
