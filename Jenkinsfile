@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh '''
                     # Local copy to Tomcat webapps directory
-                    sudo cp target/mymaventom.war/opt/tomcat/webapps/
+                    sudo cp target/mymaventom.war /opt/tomcat/webapps/
                 '''
             }
         }
