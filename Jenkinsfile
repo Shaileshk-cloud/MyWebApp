@@ -9,10 +9,10 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ShashiMadari/MavenWebApp.git'
+                git 'https://github.com/Shaileshk-cloud/MyWebApp.git'
             }
         }
-
+https://github.com/ShashiMadari/MavenWebApp.git
         stage('Build WAR') {
             steps {
                 sh 'mvn clean package'
